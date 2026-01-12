@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="top-bar">
+            <div id="line">
+                <div id="mercury-line-indicator" class="line-indicator">
+                    &#9791;
+                </div>
+                <div id="venus-line-indicator" class="line-indicator">
+                    &#9792;
+                </div>
+                <div id="earth-line-indicator" class="line-indicator">
+                    &#9793;
+                </div>
+                <div id="mars-line-indicator" class="line-indicator">
+                    &#9794;
+                </div>
+                <div id="jupiter-line-indicator" class="line-indicator">
+                    &#9795;
+                </div>
+                <div id="saturn-line-indicator" class="line-indicator">
+                    &#9796;
+                </div>
+                <div id="uranus-line-indicator" class="line-indicator">
+                    &#9797;
+                </div>
+                <div id="neptune-line-indicator" class="line-indicator">
+                    &#9798;
+                </div>
+            </div>
+        </div>
+        <div id="body">
+            <div id="bounding-box">
+                <div id="sun" class="planet"></div>
+                <div id="mercury" class="planet">
+                    <div id="mercury-shadow" class="shadow"></div>
+                    <div id="mercury-indicator" class="indicator"></div>
+                </div>
+                <div id="venus" class="planet">
+                    <div id="venus-shadow" class="shadow"></div>
+                    <div id="venus-indicator" class="indicator"></div>
+                </div>
+                <div id="earth" class="planet">
+                    <div id="earth-shadow" class="shadow"></div>
+                    <div id="earth-indicator" class="indicator"></div>
+                </div>
+                <div id="mars" class="planet">
+                    <div id="mars-shadow" class="shadow"></div>
+                    <div id="mars-indicator" class="indicator"></div>
+                </div>
+                <div id="jupiter" class="planet">
+                    
+                    <div id="jupiter-shadow" class="shadow"></div>
+                    <div id="jupiter-indicator" class="indicator"></div>
+                </div>
+                <div id="saturn" class="planet">
+                    
+                    <div id="saturn-shadow" class="shadow"></div>
+                    <div id="saturn-indicator" class="indicator"></div>
+                    <div id="saturn-rings"></div>
+                </div>
+
+                <div id="uranus" class="planet">
+                    
+                    <div id="uranus-shadow" class="shadow"></div>
+                    <div id="uranus-indicator" class="indicator"></div>
+                </div>
+
+                <div id="neptune" class="planet">
+                    
+                    <div id="neptune-shadow" class="shadow"></div>
+                    <div id="neptune-indicator" class="indicator"></div>
+                </div>
+                <div id="mercury-orbit" class="orbit">
+                    
+                </div>
+                <div id="venus-orbit" class="orbit">
+                    
+                </div>
+                
+                <div id="earth-orbit" class="orbit">
+                    
+                </div>
+
+                <div id="mars-orbit" class="orbit">
+                    
+                </div>
+
+                <div id="jupiter-orbit" class="orbit">
+                    
+                </div>
+
+                <div id="saturn-orbit" class="orbit">
+                    
+                </div>
+
+                <div id="uranus-orbit" class="orbit">
+                    
+                </div>
+
+                <div id="neptune-orbit" class="orbit">
+                    
+                </div>
+                
+            </div>
+            <div id="left-hint-tab">
+                <div id="info-bar">
+                    <div id="name-tag">
+                        <div id="color-indicator"></div>
+                        <h1 id="name">Jupiter</h1> 
+                    </div>
+                    
+                    <button id="exit">x</button>
+                </div>
+                
+                <p id="content">Lorem ipsum</p>
+            </div>
+
+            
+            
+        </div>
+        <div id="bottom-panel">
+            <div id="buttons">
+                <button id="home">Reset</button>
+                <button id="music-button" class="deactivated">Music</button>
+            </div>
+            
+            <div id="time-box">
+                <p id="time-rate">Current time: <b><span id="rate">1000000</span></b>x actual speed</p>
+
+                <p id="hint-text">Customize Speed</p>
+                <input id="time-customizer" type="range" min="-1" max="8" step="0.2" value="6">
+
+            </div>
+                
+            </div>
+            
+                
+            
+        </div>
+        <script src="index.js"></script>
+        <audio id="music-player" src="static/background-music.mp3" hidden loop></audio>
+
+    </body>
+</html>
